@@ -1,0 +1,131 @@
+// Utilities
+.container {
+  max-width: $max-width;
+  margin: auto;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+// Button
+%btn-shared {
+  display: inline-block;
+  border: none;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn {
+  &-primary {
+    @extend %btn-shared;
+    color: #333;
+    background: $primary-color;
+  }
+  &-light {
+    @extend %btn-shared;
+    color: #333;
+    background: $light-color;
+  }
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background: $dark-color;
+  }
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background: $primary-color;
+}
+
+.l-heading {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 300;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  display: block;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: $primary-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+// 
+.bg {
+  &-primary {
+    background: $primary-color;
+    color: #333;
+  }
+
+  &-light {
+    background: $light-color;
+    color: #333;
+  }
+
+  &-dark {
+    background: $dark-color;
+    color: #f4f4f4;
+  }
+
+  &-medium {
+    background: $medium-color;
+    color: #333;
+  }
+}
+
+// Padding
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+
+  &-2 {
+    padding: 2rem 0;
+  }
+
+  &-3 {
+    padding: 3rem 0;
+  }
+
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+// Margin
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+
+  &-2 {
+    margin: 2rem 0;
+  }
+
+  &-3 {
+    margin: 3rem 0;
+  }
+
+  &-4 {
+    margin: 4rem 0;
+  }
+}
